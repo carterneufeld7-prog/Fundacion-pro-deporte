@@ -277,8 +277,9 @@ h2 {
 }
 
 .gallery-ba .media-card img {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
+  background: #e8eef2;
 }
 
 .gallery-ba figcaption {
