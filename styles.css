@@ -257,6 +257,37 @@ h2 {
   margin: 0.8rem 0 0;
 }
 
+.ba-intro {
+  color: var(--muted);
+  max-width: 640px;
+  margin: 0 0 1.25rem;
+  line-height: 1.65;
+}
+
+.ba-card {
+  margin: 0;
+}
+
+.label-before {
+  background: #5f6b7a;
+}
+
+.label-after {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+}
+
+.gallery-ba .media-card img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.gallery-ba figcaption {
+  color: var(--muted);
+  margin: 0.8rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
 .table-wrap {
   margin-top: 1.1rem;
   overflow-x: auto;
