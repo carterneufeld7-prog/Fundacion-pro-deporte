@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundación Pro Deporte | Nuestro Trabajo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Fundación Pro Deporte</a>
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a class="active" href="trabajo.html">Nuestro Trabajo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="hero-kicker">Compromiso comunitario</p>
+        <h1>Nuestro Trabajo</h1>
+        <p class="hero-subtitle">
+          Restauramos y mejoramos instalaciones deportivas, impulsamos cursos de verano
+          y generamos impacto positivo en la comunidad a través del deporte.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Antes y Después</h2>
+        <div class="gallery">
+          <article class="media-card">
+            <span class="label">Antes</span>
+            <img src="assets/antes1.jpg" alt="Cancha antes de la rehabilitación">
+            <p>
+              Instalación con estructura dañada y condiciones limitadas para actividades deportivas.
+            </p>
+          </article>
+          <article class="media-card">
+            <span class="label">Después</span>
+            <img src="assets/despues1.jpg" alt="Cancha después de la rehabilitación">
+            <p>
+              Espacio mejorado y seguro, listo para entrenamientos, torneos y convivencia comunitaria.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-bg">
+      <div class="container">
+        <h2>Cursos de Verano</h2>
+        <p>
+          Durante el verano brindamos actividades deportivas, entrenamiento físico y dinámicas de
+          integración social para fortalecer habilidades, autoestima y trabajo en equipo.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Día</th>
+                <th>Horario</th>
+                <th>Actividad</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lunes</td>
+                <td>9:00 - 11:00</td>
+                <td>Fundamentos de básquetbol</td>
+              </tr>
+              <tr>
+                <td>Miércoles</td>
+                <td>10:00 - 12:00</td>
+                <td>Condición física y coordinación</td>
+              </tr>
+              <tr>
+                <td>Viernes</td>
+                <td>9:00 - 11:30</td>
+                <td>Juegos en equipo y convivencia</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© Fundación Pro Deporte</div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

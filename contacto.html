@@ -8,44 +8,69 @@
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav container">
+    <div class="container nav">
       <a class="brand" href="index.html">Fundación Pro Deporte</a>
-      <ul class="nav-links">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="nuestro-trabajo.html">Nuestro trabajo</a></li>
-        <li><a class="active" href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="trabajo.html">Nuestro Trabajo</a></li>
+          <li><a class="active" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main class="container page-content">
-    <section class="card">
-      <h1>Contacto</h1>
-      <p>
-        Estamos para colaborar con escuelas, colonias y centros deportivos que necesiten
-        rehabilitación o actividades formativas.
-      </p>
-      <p><strong>Fundación Pro Deporte</strong></p>
-      <p>Asociación Civil</p>
-      <p>Correo: contacto@fundacionprodeporte.org</p>
-      <p>Teléfono: +52 000 000 0000</p>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="hero-kicker">Conversemos</p>
+        <h1>Contacto</h1>
+        <p class="hero-subtitle">
+          Escríbenos para apoyar proyectos deportivos, colaborar en rehabilitación de espacios o
+          participar en nuestras actividades comunitarias.
+        </p>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Equipo</h2>
-      <ul class="team-list">
-        <li>Carter</li>
-        <li>Denisse</li>
-        <li>Alexa</li>
-        <li>Jacky</li>
-      </ul>
+    <section class="section">
+      <div class="container two-col">
+        <form class="contact-form" action="#" method="post">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre completo" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="tu@email.com" required>
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos cómo podemos ayudar" required></textarea>
+
+          <button class="btn-primary" type="submit">Enviar</button>
+        </form>
+
+        <aside class="info-card">
+          <h2>Equipo</h2>
+          <ul class="team-list">
+            <li>Carter</li>
+            <li>Denisse</li>
+            <li>Alexa</li>
+            <li>Jacky</li>
+          </ul>
+        </aside>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>Gracias por apoyar el deporte comunitario</p>
-    </div>
+    <div class="container">© Fundación Pro Deporte</div>
   </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>

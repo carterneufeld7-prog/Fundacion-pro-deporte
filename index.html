@@ -8,32 +8,65 @@
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav container">
+    <div class="container nav">
       <a class="brand" href="index.html">Fundación Pro Deporte</a>
-      <ul class="nav-links">
-        <li><a class="active" href="index.html">Inicio</a></li>
-        <li><a href="nuestro-trabajo.html">Nuestro trabajo</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a class="active" href="index.html">Inicio</a></li>
+          <li><a href="trabajo.html">Nuestro Trabajo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero container">
-      <img src="assets/logo.png" alt="Logo Fundación Pro Deporte" class="hero-logo">
-      <h1>Fundación Pro Deporte</h1>
-      <p>
-        Somos una asociación civil dedicada a mejorar espacios deportivos y a impulsar
-        actividades que mantengan a niñas, niños y jóvenes en movimiento.
-      </p>
-      <a class="btn-primary" href="contacto.html">Ir a contacto</a>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <img src="assets/logo.png" alt="Logo Fundación Pro Deporte" class="hero-logo">
+        <p class="hero-kicker">Asociación Civil</p>
+        <h1>Fundación Pro Deporte</h1>
+        <p class="hero-subtitle">Impulsando el deporte y transformando comunidades</p>
+        <a class="btn-primary" href="contacto.html">Contáctanos</a>
+      </div>
+    </section>
+
+    <section class="section alt-bg">
+      <div class="container two-col">
+        <div>
+          <h2>¿Quiénes somos?</h2>
+          <p>
+            Somos una asociación civil comprometida con la recuperación de espacios deportivos
+            para que niñas, niños y jóvenes tengan lugares seguros donde entrenar y convivir.
+          </p>
+          <p>
+            Reparamos y mejoramos centros deportivos en la comunidad, y también desarrollamos
+            cursos de verano para impulsar hábitos saludables, disciplina y trabajo en equipo.
+          </p>
+        </div>
+        <div class="info-card">
+          <h3>Impacto social</h3>
+          <p>
+            Transformamos infraestructura y oportunidades: cada cancha rehabilitada y cada curso
+            organizado fortalece el tejido social y abre nuevas posibilidades para la juventud.
+          </p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>Fundación Pro Deporte - Asociación Civil</p>
-    </div>
+    <div class="container">© Fundación Pro Deporte</div>
   </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
