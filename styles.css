@@ -386,6 +386,36 @@ h2 {
   margin: 1.75rem 0 0;
 }
 
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.sponsor-item {
+  background: var(--surface);
+  border-radius: var(--radius);
+  border: 1px solid #d8ecf2;
+  box-shadow: var(--shadow);
+  padding: 1rem 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+}
+
+.sponsor-item img {
+  max-width: 100%;
+  max-height: 72px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
 .table-wrap {
   margin-top: 1.1rem;
   overflow-x: auto;
@@ -473,6 +503,10 @@ tbody td {
 
   .help-grid {
     grid-template-columns: 1fr;
+  }
+
+  .sponsors-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
