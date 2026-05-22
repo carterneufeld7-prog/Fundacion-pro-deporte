@@ -386,6 +386,20 @@ h2 {
   margin: 1.75rem 0 0;
 }
 
+.hero-sponsors {
+  width: min(920px, 100%);
+  margin: 0 auto 1.5rem;
+}
+
+.hero-sponsors-label {
+  margin: 0 0 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-dark);
+}
+
 .sponsors-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -396,16 +410,21 @@ h2 {
   align-items: center;
 }
 
+.sponsors-grid-hero {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
 .sponsor-item {
   background: var(--surface);
-  border-radius: var(--radius);
+  border-radius: 12px;
   border: 1px solid #d8ecf2;
-  box-shadow: var(--shadow);
-  padding: 1rem 1.1rem;
+  box-shadow: 0 6px 18px rgba(18, 34, 74, 0.08);
+  padding: 0.55rem 0.65rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100px;
+  min-height: 64px;
 }
 
 .sponsor-item img {
@@ -414,6 +433,15 @@ h2 {
   width: auto;
   height: auto;
   object-fit: contain;
+}
+
+.sponsors-grid-hero .sponsor-item {
+  min-height: 56px;
+  padding: 0.45rem 0.5rem;
+}
+
+.sponsors-grid-hero .sponsor-item img {
+  max-height: 48px;
 }
 
 .table-wrap {
@@ -505,7 +533,8 @@ tbody td {
     grid-template-columns: 1fr;
   }
 
-  .sponsors-grid {
+  .sponsors-grid,
+  .sponsors-grid-hero {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
