@@ -340,21 +340,6 @@ h2 {
   border: 1px solid #d0e8ef;
 }
 
-.gallery-photos {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.gallery-photos figcaption {
-  color: var(--muted);
-  margin: 0.75rem 0 0;
-  font-size: 0.92rem;
-  line-height: 1.45;
-}
-
-.gallery-photos .media-card {
-  margin: 0;
-}
-
 .testimonials {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -482,7 +467,6 @@ tbody td {
     grid-template-columns: 1fr;
   }
 
-  .gallery-photos,
   .testimonials {
     grid-template-columns: 1fr;
   }
