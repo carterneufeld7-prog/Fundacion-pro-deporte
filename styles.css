@@ -486,13 +486,49 @@ tbody td {
   box-shadow: 0 0 0 4px rgba(11, 112, 138, 0.16);
 }
 
-.team-list {
-  margin: 0;
-  padding-left: 1.15rem;
+.contact-form-wrap {
+  max-width: 520px;
+  margin: 0 auto;
 }
 
-.team-list li {
-  margin: 0.38rem 0;
+.contact-form-wrap .contact-form {
+  width: 100%;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.team-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  border: 1px solid #d8ecf2;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  text-align: center;
+}
+
+.team-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 12px;
+  margin-bottom: 0.85rem;
+}
+
+.team-name {
+  font-size: 1.1rem;
+  margin: 0 0 0.2rem;
+}
+
+.team-role {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--primary-dark);
 }
 
 .site-footer {
@@ -520,6 +556,10 @@ tbody td {
 
   .sponsors-grid,
   .sponsors-grid-bottom {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .team-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
