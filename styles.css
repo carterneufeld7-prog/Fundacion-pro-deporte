@@ -8,6 +8,8 @@
   --bg: #f6fbfc;
   --bg-alt: #eaf6f9;
   --surface: #ffffff;
+  --panel-blue: #dceef5;
+  --panel-blue-border: #b8d9e8;
   --text: #1f2937;
   --muted: #5b6679;
   --shadow: 0 10px 30px rgba(18, 34, 74, 0.12);
@@ -224,6 +226,12 @@ h2 {
   padding: 1.25rem 1.4rem;
   border: 1px solid #d8ecf2;
   box-shadow: var(--shadow);
+}
+
+.text-panel-blue {
+  background: var(--panel-blue);
+  border-color: var(--panel-blue-border);
+  box-shadow: 0 8px 24px rgba(11, 112, 138, 0.1);
 }
 
 .text-panel h1,
